@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+
+#voltar {
+    z-index: 999;
+    height: 50px;
+    width: 100px;
+    position: relative;
+    left: 150px;
+    top: -40px;
+    left: 800px;
+    background-color: #1baf4c;
+    border-radius: 6%;
+}
+
+#voltar a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#voltar:hover {
+    transition: .2s;
+    background-color: #027d2a;
+}
+
+table {
+    margin: 15px;
+    border-collapse: collapse;
+    height: 10px;
+    width: 100%;
+    color: #006621;
+    font-size: 14px;
+    text-align: left;
+}
+
+th {
+    background-color: #006621;
+    color: #FFFFFF;
+}
+
+tr:nth-child(even) {background-color: rgba(233, 231, 231, 0.959)}
+
+#status {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 3px solid #027d2a;
+    text-align: center;
+}
+
+#status label {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+#status label span {
+    font-size: 1.1rem;
+    margin-top: 2rem;
+}
+
+#status input {
+    background: #eaeaea;
+    width: 300px;
+    height: 50px;
+    padding: 0 0.5rem;
+    margin-top: 1rem;
+    outline: none;
+    color: #000000;
+    font-size: 1rem;
+    border: 1px solid #027d2a;
+    border-radius: 8px;
+}
+
+#status input[type="submit"] {
+    height: 50px;
+    width: 100px;
+    position: relative;
+    background-color: #1baf4c;
+    color: #FFFFFF;
+    border-radius: 6%;
+    border: none;
+}
+
+
+#status input[type="submit"]:hover {
+    transition: .2s;
+    background-color: #027d2a;
+    cursor: pointer;
+}

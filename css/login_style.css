@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.tela-login {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    background-image: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 80px;
+    border-radius: 15px;
+    color: #FFFFFF;
+}
+
+input {
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+
+button {
+    background-color: #1baf4c;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-size: 15px;
+}
+
+button:hover {
+    transition: .2s;
+    background-color: #027d2a;
+    cursor: pointer;
+}
+
+/*.error {
+    position: relative;
+    top: -30px;
+    border: none;
+    padding: 15px;
+    height: 40px;
+    width: 110%;
+    border-radius: 3px;
+    background-color: rgb(255, 0, 0);
+    color: #FFFFFF;
+    font-size: 15px;
+    display: none;
+}*/
+
+#error-msg {
+    position: relative;
+    top: -930px;
+    left: 820px; 
+    font-size: 1.5em;
+    color: #ff0000;
+}

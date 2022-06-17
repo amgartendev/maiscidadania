@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #eeeeee;
+    color: #000000;
+    font-weight: 500;
+    display: flex;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+main {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main h1 {
+    color: #006621;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main form label {
+    display: flex;
+    flex-direction: column;
+}
+
+main form label span {
+    font-size: 1.1rem;
+    margin-top: 2rem;
+}
+
+#voltar {
+    cursor: pointer;
+    height: 50px;
+    width: 40%;
+    margin-top: 4rem;
+    border: none;
+    border-radius: 32px;
+    background: #006621;
+    color: white;
+    transition: all .3s ease-in-out;
+    text-decoration: none;
+}
+
+#voltar a:hover {
+    background: #FF0000;
+}
+
+#voltar p {
+    position: relative;
+    top: 22%;
+    font-size: 1.4rem;
+    text-align: center;
+    justify-content: center;
+}
+
+    
+section.images {
+    width: 50vw;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 4rem;
+}
+
+section.images img {
+    width: 100%;
+}
+
+section.images .circle {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(22deg, #FF0000, #006621);
+    clip-path: circle(40% at right 80%);
+    z-index: -1;
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+    section.images img {
+        width: 110%;
+    }
+
+    section.images .circle {
+        clip-path: circle(35% at right 80%);
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    section.images {
+        display: none;
+        visibility: hidden;
+    }
+
+    main {
+        width: 100vw;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    main h1 {
+        font-size: 2rem;
+    }
+
+    main .alternative span {
+        font-size: 0.8rem;
+    }
+
+    main form label span, main form input[type="submit"] {
+        font-size: 1rem;
+    }
+}
